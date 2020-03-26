@@ -31,7 +31,3 @@ variable "instance_type" {
   default = "t2.micro"
 }
 
-variable "key_name" {
-  default     = "ps-alex.pem"
-  description = "SSH key name in your AWS account for AWS instances."
-}
