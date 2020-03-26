@@ -70,4 +70,4 @@ resource "aws_instance" "jenkins" {
   instance_type = "${var.instance_type}"
   security_groups = ["${aws_security_group.sg_jenkins.name}"]
   ami = "${lookup(var.amis, var.region)}"
-  subnet_id = aws_subnet.demo[*].id
+  subnet_id = aws_subnet.demo.id
